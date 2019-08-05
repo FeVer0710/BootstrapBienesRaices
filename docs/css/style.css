@@ -1,0 +1,165 @@
+.bg-success {
+	background-color: #138005!important;/*!important lo machaca*/
+
+}
+
+/* poner para que desaparezca la barra*/
+
+@media(min-width: 768px){
+
+	/*las clases sin espacions*/
+	.barra.bg-success{
+		background-color: transparent!important;
+
+	}
+	.header{
+		position:relative;
+
+	}
+	/* las clases con espacios ojo*/
+	.header .barra{
+		position: absolute;
+		/*para que se vea un elemento frente a otro en capa*/
+		z-index: 100;
+		width: 100%;
+	}
+}
+
+/*poner el titulo con estilo*/
+
+.navbar-brand {
+	font-size: 2rem;/*aumenta tamaÃ±o*/
+	font-weight: 300;/*grosor texto*/
+
+}
+.navbar-brand span {
+	font-weight: 900;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+	text-transform: uppercase;
+	color: ffffff;
+	font-size: .9rem;
+	font-weight: 700;
+
+}
+
+.dropdown-menu{
+	background-color: #138005;
+
+
+}
+
+.dropdown-menu .dropdown-item{
+	text-transform: uppercase;
+	color: #ffffff;
+
+}
+.dropdown-menu .dropdown-item:hover{
+	background-color: #e08709;
+
+
+}
+/*anuncios*/
+.anuncios .card{
+	margin-bottom: 2rem;
+
+}
+
+.card-precio{
+	font-size: 1.2rem;
+	color: #138005;
+	font-weight: 900;
+
+
+
+
+}
+.btn-warning{
+	background-color: #e08709;
+	color: #ffffff;
+	border-color: #e08709;
+	font-weight: 700;
+
+}
+.card-descripcion img{
+	margin-right: 1rem;
+
+}
+/*encuentra*/
+
+.encuentra {
+	background-image: url(../img/9.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+.encuentra .row{
+height: 25rem;
+
+}
+
+.encuentra h3 {
+	font-size: 2.2rem;
+	font-weight: 900;
+}
+
+/*blog*/
+/*:: pseudoelemento se inyecta por medio de css*/;
+.entrada h3::after{
+
+	content:'';
+	display: block;/*crea un elemento que le podemos dar un ancho y un alto*/
+	width: 8rem;
+	height: .2rem;
+	background-color: #138005;
+	margin-top: .5rem;
+
+}
+.meta span{
+	color: #e08709;
+
+}
+.btn-success{
+	background-color: #138005;
+	text-transform: uppercase;;
+	font-weight: 700;
+
+}
+.btn-success:hover{
+	background-color: #138005;
+
+}
+
+/*testimoniales*/
+.testimoniales {
+	background-color: #138005;
+
+}
+
+.testimoniales .carousel-item{
+	padding-left: 2rem;
+
+}
+
+.testimoniales .testimonial-texto{
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+
+}
+
+.testimoniales span{
+	font-size: 1.4rem;
+	font-weight: 900;
+}
+/*misma etiketa dos clases se quita el puto espacio*/
+.footer.bg-dark{
+	background-color: #333333!important;/*machaca la clase de bootstrap*/
+
+}
+.footer .nav-link{
+	color: #ffffff;
+	text-transform: uppercase;;
+}
